@@ -20,7 +20,3 @@ use App\Http\Controllers\WebhookController;
 // });
 
 Route::post('/', [WebhookController::class, 'handle' ] );
-
-
-
-// 'WebhookController@handle'
