@@ -41,17 +41,7 @@ class WebhookController extends Controller
             $temp = 273.15 - $res_pogoda['main']['temp'];
             $send_message = '🌡️ Погода в городе Новокузнецк '. round($temp) . ' °C';   
         }
-
-
-
-
-
-
-
-
-
-
-
+        
         Http::get('https://api.telegram.org/bot6263769832:AAHstAwCtRfZJgnO545kJ-706y2Fw991ODM/sendMessage', [
             'chat_id' => 5162972303,
             'text' => $send_message  
