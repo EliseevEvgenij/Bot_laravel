@@ -3,6 +3,10 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebhookController;
+use App\Libraries\TelegramGateway;
+use App\Libraries\WeatherAction;
+use App\Http\Controllers\Message;
+use App\Libraries\HelloAction;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +23,6 @@ use App\Http\Controllers\WebhookController;
 //     return $request->user();
 // });
 
-Route::post('/', [WebhookController::class, 'handle' ] );
+//Route::post('/', [WebhookController::class, 'handle' ] );
+
+Route::post('/', [Message::class, 'message' ] );
