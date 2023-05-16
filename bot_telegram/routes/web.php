@@ -10,4 +10,3 @@ Route::get('/', function () {
         'text' => 'Привет !'  
     ]); 
 });
-
